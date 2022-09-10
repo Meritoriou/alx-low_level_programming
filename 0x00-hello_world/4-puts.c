@@ -2,10 +2,10 @@
 /**
  *main- Serves as the entry point for the program
  *
-*Return: return 0 
+ * Retun: always zero 
  */
 int main(void)
 {
-		puts("\"Programming is like building a multilingual puzzle");
-			return (0);
+	puts("\"Programming is like building a multilingual puzzle");
+	return (0);
 }
