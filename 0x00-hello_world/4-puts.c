@@ -1,10 +1,11 @@
-#include <stdio.h>
+#include<stdio.h>
+
 /**
  *main- Serves as the entry point for the program
  *
  * Description: C program that print with put function
  *
- *Retun:always zero
+ *Retun:Always 0 (Success)
  */
 
 int main(void)
