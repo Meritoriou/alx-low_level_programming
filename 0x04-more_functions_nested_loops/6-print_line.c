@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**                                                                                                                                     
  * print_line - a function that draws a straight line in the terminal.                                                                  
  * followed by a new line.                                                                                                              
