@@ -1,23 +1,18 @@
-#ifndef MAIN_H                                                                                      
-#define MAIN_H                                                                                      
-#include <stdio.h>                                                                                            
-/**                                                                                                  *void prototypes()
-*int prototypes()
-*char prototypes()
-*/ 
-void reverse_array(int *a, int n);
+#ifndef MAIN_H
+#define MAIN_H
+
+#include <stddef.h>
+
+int _putchar(char c);
+void *_memset(void *s, int c, size_t n);
+char *_memcpy(char *dest, char *src, unsigned int n);
+char *_strchr(char *s, char c);
+unsigned int _strspn(char *s, char *accept);
+char *_strpbrk(char *s, char *accept);
+char *_strstr(char *haystack, char *needle);
+void print_chessboard(char (*a)[8]);
+void print_diagsums(int *a, int size);
+void set_string(char **s, char *to);
 void print_number(int n);
-void print_buffer(char *b, int size);
-int _strcmp(char *s1, char *s2);
-char *_strcat(char *dest, char *src)
-char *_strncat(char *dest, char *src, int n);
-char *string_toupper(char *);
-char *cap_string(char *);
-char *cap_string(char *);
-char *leet(char *);
-char *rot13(char *);
-char *infinite_add(char *n1, char *n2, char *r, int size_r);
-char *add_strings(char *n1, char *n2, char *r, int r_index);
 
-#endif /MAIN_H/
-
+#endif
