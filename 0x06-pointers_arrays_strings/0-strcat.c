@@ -1,43 +1,28 @@
-#include "holberton.h"
-
+#include "main.h"
 #include <stdio.h>
 
-
-
 /**
-
- * main - check the code for Holberton School students.
-
+ * _strcat - Concatenates two strings
+ * @dest: The destination string
+ * @src: The source string
  *
-
- * Return: Always 0.
-
+ * Return: A pointer to the resulting string dest
  */
-
-int main(void)
-
+char *_strcat(char *dest, char *src)
 {
+	int dlen = 0, i;
 
-    char s1[98] = "Hello ";
+	while (dest[dlen])
+	{
+		dlen++;
+	}
 
-    char s2[] = "World!\n";
+	for (i = 0; src[i] != 0; i++)
+	{
+		dest[dlen] = src[i];
+		dlen++;
+	}
 
-    char *p;
-
-
-
-    printf("%s\n", s1);
-
-    printf("%s", s2);
-
-    p = _strcat(s1, s2);
-
-    printf("%s", s1);
-
-    printf("%s", s2);
-
-    printf("%s", p);
-
-    return (0);
-
+	dest[dlen] = '\0';
+	return (dest);
 }
